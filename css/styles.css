@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/todo-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-container {
+  width: 450px;
+  padding: 1.5rem;
+  background-color: oklch(98.5% 0.002 247.839);
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-container h1 {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+input {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: calc(0.75rem - 2px);
+  flex: 1;
+}
+
+#todo-form {
+  margin-bottom: 1rem;
+}
+
+#edit-form {
+  margin-bottom: 0.2rem;
+}
+
+#todo-form p,
+#edit-form p {
+  margin-bottom: 0.5rem;
+}
+
+button {
+  width: 2.5rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background-color: #6d9550;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.form-control {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#cancel-edit-btn {
+  width: 5rem;
+  height: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #6d9550;
+  border-radius: 10px;
+  border: none;
+  font-size: 0.8rem;
+}
+
+#toolbar {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#toolbar h4 {
+  margin-bottom: 0.2rem;
+}
+
+#toolbar button,
+.todo button {
+  width: 2rem;
+  height: 2rem;
+}
+
+#search,
+#filter {
+  width: 100%;
+}
+
+#search form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+#filter h4,
+#search h4 {
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+#filter select {
+  width: 100%;
+}
+
+#filter-select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: calc(0.75rem - 2px);
+}
+
+.todo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 15px;
+  padding: 1rem;
+  background-color: oklch(96.7% 0.003 264.542);
+}
+
+.todo-buttons{
+  display: flex;
+  gap: 4px;
+}
+.todo input {
+  width: 100%;
+}
+
+.todo h3 {
+  font-size: 1rem;
+  font-weight: 400;
+  width: 100%;
+}

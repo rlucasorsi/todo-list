@@ -4,6 +4,9 @@
   font-family: "Work Sans", sans-serif;
   box-sizing: border-box;
 }
+html {
+  height: 100vh;
+}
 
 body {
   background-image: url("../img/todo-background.jpg");
@@ -43,7 +46,7 @@ input {
   margin-bottom: 1rem;
 }
 
-.hide{
+.hide {
   display: none;
 }
 
@@ -70,7 +73,8 @@ button {
   transition: 0.6s;
 }
 
-button:hover, #cancel-edit-btn:hover {
+button:hover,
+#cancel-edit-btn:hover {
   background-color: #516b3d;
 }
 
@@ -91,8 +95,6 @@ button:hover, #cancel-edit-btn:hover {
   border: none;
   font-size: 0.8rem;
 }
-
-
 
 #toolbar {
   margin-top: 1rem;
@@ -132,6 +134,12 @@ button:hover, #cancel-edit-btn:hover {
   width: 100%;
 }
 
+#filter select:focus {
+  width: 100%;
+  border-color: #6d9550;
+  box-shadow: 0 0 5px rgba(109, 149, 80, 0.5);
+}
+
 #filter-select {
   padding: 0.5rem 0.75rem;
   border: 1px solid #ddd;
@@ -149,7 +157,7 @@ button:hover, #cancel-edit-btn:hover {
   background-color: oklch(96.7% 0.003 264.542);
 }
 
-.todo-buttons{
+.todo-buttons {
   display: flex;
   gap: 0.4rem;
 }
@@ -157,6 +165,11 @@ button:hover, #cancel-edit-btn:hover {
   width: 100%;
 }
 
+input:focus,
+select:focus {
+  border: 2px solid #6d9550;
+  outline: none;
+}
 .todo h3 {
   font-size: 1rem;
   font-weight: 400;
@@ -167,5 +180,5 @@ button:hover, #cancel-edit-btn:hover {
   text-decoration: line-through;
   font-style: italic;
   background-color: #5b7947a1;
-  color: #fff
+  color: #fff;
 }
